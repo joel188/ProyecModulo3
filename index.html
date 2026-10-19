@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <h1>El maravilloso mundo de Comic y Manga</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#productos">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#catalogo">Catalogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#preguntas">Preguntas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://thumb.wikimedia.org/wikipedia/it/thumb/9/9a/Capitan_Harlock_cover_1.jpg/500px-Capitan_Harlock_cover_1.jpg?utm_source=it.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+                    class="d-block w-100" alt="capitan-harlock">
+            </div>
+            <div class="carousel-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/35/Amazing_Fantasy_15.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled"
+                    class="d-block w-100" alt="spider-man">
+            </div>
+            <div class="carousel-item">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPvtVqdPtC1EJ9nXru4bh6D8G5XejAMS8McDSfctnSaQ-y9nwXsGY9gpD5R-QW-FV811qmsOWNBFQSM57qwuKDX3dKF4nfZFmENXB8FAN4vyUtgq0KPkC4SHeg-y2UUOebvpOmuAASrVSQ/w260-h400/Batman+rebirth+%25280%2529.jpg"
+                    class="d-block w-100" alt="batman">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/736x/03/4a/16/034a16a46bdf6821398258d8c2621e70.jpg" class="d-block w-100"
+                    alt="op">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div><br>
+    <main>
+        <section style="padding: 20px;">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://thumb.wikimedia.org/wikipedia/it/thumb/9/9a/Capitan_Harlock_cover_1.jpg/500px-Capitan_Harlock_cover_1.jpg?utm_source=it.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+                            class="card-img-top" alt="Capitan">
+                        <div class="card-body">
+                            <h5 class="card-title" id="productos" data-bs-toggle="tooltip" data-bs-placement="right"
+                                data-bs-title="Obra Maestra de Leiji Matsumoto">Capitán Harlock</h5>
+                            <p class="card-text">En el año 2977, la humanidad anhela regresar a una Tierra que apenas
+                                reconoce,
+                                sumida en la apatía y gobernada por una Coalición Gaia corrupta. En este escenario
+                                desolado,
+                                emerge el enigmático pirata espacial Capitán Harlock, un proscrito que vaga por el
+                                cosmos a
+                                bordo de su nave, la Arcadia. Su misión: vengarse de quienes han dañado a la humanidad y
+                                a él
+                                mismo. Mientras la Coalición lo persigue implacablemente, Harlock y su leal tripulación
+                                se
+                                convierten en la última esperanza contra las amenazas que acechan desde las estrellas.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Manga</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPvtVqdPtC1EJ9nXru4bh6D8G5XejAMS8McDSfctnSaQ-y9nwXsGY9gpD5R-QW-FV811qmsOWNBFQSM57qwuKDX3dKF4nfZFmENXB8FAN4vyUtgq0KPkC4SHeg-y2UUOebvpOmuAASrVSQ/w260-h400/Batman+rebirth+%25280%2529.jpg"
+                            class="card-img-top" alt="Batman">
+                        <div class="card-body">
+                            <h5 class="card-title" data-bs-toggle="tooltip" data-bs-placement="right"
+                                data-bs-title="¡Nueva etapa de Batman por el galardonado Tom King!">Batman Rebirth #1
+                            </h5>
+                            <p class="card-text">Después de recobrar la memoria, rejuvenecer su cuerpo, en cierta forma
+                                después del Renacer Batman, con traje nuevo incluido, protegera a su ciudad nuevamente
+                                pero han aparecidos nuevos héroes llamándose Gotham y Gotham Girl
+                                con poderes muy similares a los de Superman pero una vez ocurridos los eventos de
+                                Rebirth sabe que algo pasa en el universo y es por eso que no se puede
+                                dar el lujo de confiar en todos los que dicen querer ayudar.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Comic</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/3/35/Amazing_Fantasy_15.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled"
+                            class="card-img-top" alt="spider" data-bs-toggle="tooltip" data-bs-placement="right"
+                            data-bs-title="Primera edicion reimpresa de 1962">
+                        <div class="card-body">
+                            <h5 class="card-title">Amazing Fantasy #15 </h5>
+                            <p class="card-text">El legendario cómic que dio origen a Spider-Man.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Comic</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://i.pinimg.com/736x/03/4a/16/034a16a46bdf6821398258d8c2621e70.jpg"
+                            class="card-img-top" alt="OnePiece">
+                        <div class="card-body">
+                            <h5 class="card-title" data-bs-placement="right"
+                                data-bs-title="¡Incluye un poster exclusivo de regalo!">One Piece Vol.111</h5>
+                            <p class="card-text">En este volumen, los Piratas del Sombrero de Paja continúan su travesía
+                                hacia Elbaf, la legendaria isla de los gigantes guerreros.
+                                Tras una intensa batalla en Egghead, la tripulación se reúne y se prepara para
+                                adentrarse en la mítica tierra de los gigantes.
+                                Este arco promete profundizar en la historia y cultura de Elbaf, revelando secretos y
+                                desafíos que pondrán a prueba a Luffy y sus amigos.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Manga</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding: 20px;">
+            <p class="d-inline-flex gap-1">
+            <h3 class="h4 mb-3 border-buttom pb-2" id="catalogo">Informacion del Catalogo</h3>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+                aria-expanded="false" aria-controls="multiCollapseExample1">Novedades Manga</a>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                aria-controls="multiCollapseExample2">Comics Americanos</button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#multiCollapseExample3" aria-expanded="false"
+                aria-controls="multiCollapseExample3">Envios y Preventas</button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+                aria-expanded="false"
+                aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3">Todas
+            </button>
+            </p>
+            <div class="row">
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                            Encuentra los tomos imporatados en español de Shonen, Seinen y Shojo directamente desde las
+                            editoriales mas reconocidas.
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                            Amplio surtido en grapas, tomos de tapa dura (Hardcover) y TPB de Marvel, DC comics y
+                            editoriales
+                            independientes.
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample3">
+                        <div class="card card-body">
+                            Realizamos envios nacionales e internacionales con empaque especial anti-dobleces para
+                            proteger tus
+                            tomos de coleccion.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding: 20px;">
+            <div class="accordion" id="accordionExample">
+                <h3 class="h4 mb-3 border-buttom pb-2" id="preguntas">Preguntas Frecuencias y Metados de Pago
+                </h3>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Que tipo de Tarjetas y Metodos de Pago aceptan?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Aceptamos Tarjetas BAN, VISA, Maestro, PayPal, MasterCard y American Express. Tambien
+                            aceptamos
+                            transferencoas bancarias directas.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Realizan apartado o reservas de preventas?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            ¡Si! Puedes reservar cualquier Comic o Manga proximo a salir con el 30% del valor total.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Los Mangas son traducidos o idiomas originales?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Contamos con un variedad de catalogos de Mangas en diversos idiomas gracias a diversas
+                            editoriales
+                            (Panini, Norma, Ivrea, etc.) y una seccion de importacion en japones e ingles.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center my-5" style="padding: 20px;" data-bs-theme="blue">
+
+            <div class="text-bg-warning p-3">
+                <h4>¿Quieres un 20% de descuento en tu primer compra?</h4>
+                <p>Unete al Club Comiquero y recibe notificaciones de nuevos lanzamentos</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Registrate
+                </button>
+
+            </div>
+
+
+        </section>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Datos Personales</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" aria-label="Username"
+                                    aria-describedby="addon-wrapping">
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email </label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="celularnumero" class="form-label">Numero de telefono</label>
+                                <input type="number" class="form-control" id="cellnumber" aria-label="cellNumber">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Acepto los terminos y
+                                    condiciones</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary" data-bs-dismiss="alert">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+        const myCarouselElement = document.querySelector('#carousel')
+
+        const carousel = new bootstrap.Carousel(myCarouselElement, {
+            interval: 2000,
+            ride: 'carousel'
+        })
+    </script>
+</body>
+
+
+
+</html>
